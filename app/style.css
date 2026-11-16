@@ -214,11 +214,11 @@ table { width: 100%; border-collapse: collapse; background: var(--card); border-
 th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); font-size: 14.5px; }
 th { background: #f0f2f5; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
 tr:last-child td { border-bottom: 0; }
-td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 td.rank { font-weight: 800; width: 52px; }
 tr.top3 td.rank { color: var(--accent); }
 .prize { font-weight: 700; color: var(--green); }
-.handle { font-weight: 700; }
+.handle { font-weight: 700; white-space: nowrap; }
 .medal { font-size: 13px; color: var(--amber); font-weight: 700; }
 .pager { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
 .pager button {
