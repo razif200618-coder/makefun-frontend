@@ -3,12 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>make.fun bounties</title>
+<title>make.fun — bounties, leaderboards, profiles</title>
+<meta name="description" content="A fast read-only frontend for make.fun: live bounty board, bounty pages, leaderboards and public profiles, straight from make.fun's public API.">
 <link rel="stylesheet" href="style.css">
 <script type="module" src="main.js"></script>
 </head>
 <body>
-<header><a href="#/">make.fun bounties</a></header>
-<main id="app"></main>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/"><span class="brand-mark">◆</span> make.fun</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#/" data-nav="board">Board</a>
+      <a href="#/bounty/threejs-fps-02" data-nav="bounty">Bounty</a>
+      <a href="#/bounty/threejs-fps-02/leaderboard" data-nav="leaderboard">Leaderboard</a>
+    </nav>
+    <form class="topsearch" id="topsearch" role="search">
+      <input id="topsearch-input" type="search" placeholder="Search bounties or @handle…" aria-label="Search bounties or a profile" autocomplete="off">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="footer wrap">
+  <p>Read-only frontend for <a href="https://make.fun">make.fun</a> — live data from its public API. No sign-in, nothing is written. Built for the make.fun frontend bounty.</p>
+</footer>
 </body>
 </html>
